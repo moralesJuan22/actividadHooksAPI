@@ -1,0 +1,39 @@
+/* Fuente agradable y base para modo oscuro */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --color-bg: #181c24;
+  --color-bg-card: #23283a;
+  --color-primary: #61dafb;
+  --color-secondary: #8be9fd;
+  --color-text: #f8f8f2;
+  --color-subtle: #b0b3c6;
+  --color-border: #282c34;
+  --radius: 14px;
+  --shadow: 0 2px 16px 0 #00000033;
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}

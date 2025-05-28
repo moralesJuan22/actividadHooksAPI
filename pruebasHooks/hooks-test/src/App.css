@@ -1,42 +1,117 @@
 #root {
-  max-width: 1280px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  background: var(--color-bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2rem;
+  margin: 2rem 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1, h2, h3 {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.02em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+}
+
+h3 {
+  font-size: 1.15rem;
+  color: var(--color-subtle);
+}
+
+p, label, input, select, button, em, strong {
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+p {
+  margin: 1.2rem 0;
+  line-height: 1.7;
+}
+
+em {
+  color: var(--color-secondary);
+  font-style: normal;
+}
+
+strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+button, select, input[type="text"] {
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  font-family: inherit;
+  font-size: 1em;
+  transition: background 0.2s, border 0.2s;
+}
+
+button:hover, select:focus, input[type="text"]:focus {
+  background: var(--color-bg-card);
+  border-color: var(--color-primary);
+  outline: none;
 }
 
 .card {
-  padding: 2em;
+  background: var(--color-bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5em;
+  margin: 1.5em 0;
 }
 
-.read-the-docs {
-  color: #888;
+pre {
+  background: #22263a;
+  color: #e6e6e6;
+  border-radius: 8px;
+  padding: 1em;
+  overflow-x: auto;
+  font-size: 0.95em;
+  margin: 1em 0;
+}
+
+@media (max-width: 700px) {
+  #root, .App {
+    padding: 1rem 0.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .App {
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #root, .App {
+    padding: 0.5rem 0.2rem;
+  }
+  h1, h2, h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }
